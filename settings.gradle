@@ -1,0 +1,2 @@
+include ':fragments', ':recyclerview'
+rootProject.name='Playground4'
