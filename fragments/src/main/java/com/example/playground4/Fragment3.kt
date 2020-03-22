@@ -5,13 +5,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.fragment_fragment2.*
+import kotlinx.android.synthetic.main.fragment_fragment3.*
 
-class Fragment2 : Fragment(), FragmentWithNextButton {
+class Fragment3 : Fragment(), FragmentWithDoneButton {
 
-    private lateinit var callback: OnNextButtonFragmentListener
+    private lateinit var callback: OnDoneButtonFragmentListener
 
-    override fun setOnNextButtonListener(callback: OnNextButtonFragmentListener) {
+    override fun setOnDoneButtonListener(callback: OnDoneButtonFragmentListener) {
         this.callback = callback
     }
 
@@ -20,13 +20,13 @@ class Fragment2 : Fragment(), FragmentWithNextButton {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_fragment2, container, false)
+        return inflater.inflate(R.layout.fragment_fragment3, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        buttonNext.setOnClickListener {
-            callback.onNextButton()
+        buttonDone.setOnClickListener {
+            callback.onDoneButton()
         }
     }
 }

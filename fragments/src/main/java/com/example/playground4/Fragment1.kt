@@ -7,15 +7,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_fragment1.*
 
-class Fragment1 : Fragment() {
+class Fragment1 : Fragment(), FragmentWithNextButton {
 
-    private lateinit var callback: OnButtonClickFragment1Listener
+    private lateinit var callback: OnNextButtonFragmentListener
 
-    interface OnButtonClickFragment1Listener {
-        fun onNextButton()
-    }
-
-    fun setOnButtonClickFragment1Listener(callback: OnButtonClickFragment1Listener) {
+    override fun setOnNextButtonListener(callback: OnNextButtonFragmentListener) {
         this.callback = callback
     }
 
@@ -29,7 +25,7 @@ class Fragment1 : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        button.setOnClickListener {
+        buttonNext.setOnClickListener {
             callback.onNextButton()
         }
     }
