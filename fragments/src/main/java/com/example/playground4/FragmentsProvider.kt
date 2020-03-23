@@ -12,9 +12,9 @@ class FragmentsProvider {
 
     private val fragments = listOf(FRAGMENT1_KEY, FRAGMENT2_KEY, FRAGMENT3_KEY)
 
-    fun provideNextFragment(targetFragment: Int): Fragment? {
-        if (targetFragment >= fragments.size ) return null
-        when (fragments[targetFragment]) {
+    fun provideFragment(targetFragmentNumber: Int): Fragment? {
+        if (targetFragmentNumber >= fragments.size ) return null
+        when (fragments[targetFragmentNumber]) {
             FRAGMENT1_KEY -> return Fragment1()
             FRAGMENT2_KEY -> return Fragment2()
             FRAGMENT3_KEY -> return Fragment3()
