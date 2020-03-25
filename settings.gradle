@@ -1,2 +1,3 @@
 include ':fragments', ':recyclerview'
 rootProject.name='Playground4'
+include ':bottomnavigation'
