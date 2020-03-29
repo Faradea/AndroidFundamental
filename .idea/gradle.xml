@@ -12,8 +12,10 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/bottomnavigation" />
+            <option value="$PROJECT_DIR$/coroutines" />
             <option value="$PROJECT_DIR$/fragments" />
             <option value="$PROJECT_DIR$/recyclerview" />
+            <option value="$PROJECT_DIR$/sharedprefs" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
