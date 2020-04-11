@@ -12,6 +12,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/bottomnavigation" />
+            <option value="$PROJECT_DIR$/commandsequence" />
             <option value="$PROJECT_DIR$/coroutines" />
             <option value="$PROJECT_DIR$/fragments" />
             <option value="$PROJECT_DIR$/recyclerview" />
