@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/bottomnavigation" />
             <option value="$PROJECT_DIR$/commandsequence" />
             <option value="$PROJECT_DIR$/coroutines" />
+            <option value="$PROJECT_DIR$/coroutinesnetworkrequest" />
             <option value="$PROJECT_DIR$/fragments" />
             <option value="$PROJECT_DIR$/recyclerview" />
             <option value="$PROJECT_DIR$/sharedprefs" />
